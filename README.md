@@ -4,7 +4,7 @@ Personalized portfolio page with small introductory into who I am and my backgro
 
 ## Links
 * [Repo](https://github.com/Undrcver/Alicea-Portfolio)
-* [Webpage](https://undrcver.github.io/Horiseon-Web-Challenge-LA/)
+* [Webpage](https://undrcver.github.io/Alicea-Portfolio/)
 
 ## screenshot
 ![screenshot](assets/images/8d879bcf6378eefe0adc5b52327ca4bf.png)
