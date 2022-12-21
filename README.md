@@ -7,7 +7,7 @@ Personalized portfolio page with small introductory into who I am and my backgro
 * [Webpage](https://undrcver.github.io/Horiseon-Web-Challenge-LA/)
 
 ## screenshot
-![screenshot](assets/images/webpage.png)
+![screenshot](assets/images/8d879bcf6378eefe0adc5b52327ca4bf.png)
 
 
 ## Languages Used
