@@ -1,116 +1,158 @@
  /* wildcard styling */
  * {
-    box-sizing: border-box;
-}
- 
-:root{
-    --accentColor: #ad3869;
-    --headerColor: #444444;
-    --paragraphColor: #626262;
-    --ease: all 0.4s ease;
-    --radius: 6px;
-}
-/* padding for whole body */
-body {
-    margin: 0px;
-    padding: 15px;
-    font-family: "Inter", sans-serif;
-    color: var(--headerColor);
-    padding: 0px 20px;
-    background-color: #ffff;
-}
- .icon{
-    width: 24px;
-    height: 24px;
-    margin: 0px 3px;
+     box-sizing: border-box;
  }
 
-.flex-space{
-    display: flex;
-    justify-content: space-between;
-    align-items: inline;
-}
+ :root {
+     --accentColor: #095477;
+     --headerColor: #444444;
+     --paragraphColor: #626262;
+     --ease: all 0.4s ease;
+     --radius: 6px;
+ }
 
-.centered{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* styling body */
-.container {
-    max-width: 1200px;
-    margin: auto;
-}
- 
-h1 {
-    color: green;
-}
- 
-.padchild{
-    padding: 25px;
-}
+ /* padding for whole body */
+ body {
+     margin: 0px;
+     padding: 15px;
+     font-family: "Inter", sans-serif;
+     color: var(--headerColor);
+     padding: 0px 20px;
+     background-color: #ffff;
+ }
 
-/* anchor tag decoration */
-a {
-    text-decoration: none;
-    color: var(--headerColor)
-}
- 
-a:hover {
-    color: lightblue;
-}
- 
-/* paragraph tag decoration */
-p {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    overflow: hidden;
+ .paragraph{
+    color: var(--accentColor);
+ }
+ .icon {
+     width: 24px;
+     height: 24px;
+     margin: 0px 3px;
+ }
 
-}
- 
-/* row and column decoration */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px -18px;
-    padding: 8px;
-}
- 
-.row > .column {
-    padding: 6px;
-}
- 
-.column {
-    display: flex;
-    width: 25%;
-}
- 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
- 
-/* content decoration */
-.content {
-    background-color: white;
-    padding: 10px;
-    border: 1px solid gray;
-}
- 
-/* window size 850 width set */
-@media screen and (max-width: 850px) {
-    .column {
-        width: 50%;
-    
-    }
-}
+ .flex-space {
+     display: flex;
+     justify-content: space-between;
+     align-items: inline;
+ }
 
-/* window size 400 width set */
-@media screen and (max-width: 400px) {
-    .column {
-        width: 100%;
-        flex-flow: column wrap;
-    }
+ .centered {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* styling body */
+ .aboutSection .aboutImg {
+     height: 300px;
+     width: 60%;
+     margin-left: auto;
+     border-radius: 30px;
+ }
+.backgroundFix{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+ .container {
+     max-width: 1200px;
+     margin: auto;
+ }
+
+ h1 {
+     color: green;
+ }
+
+ .padchild {
+     padding: 25px;
+ }
+
+ /* anchor tag decoration */
+ a {
+     text-decoration: none;
+     color: var(--headerColor)
+ }
+
+ a:hover {
+     color: lightblue;
+ }
+
+ /* paragraph tag decoration */
+ p {
+     display: -webkit-box;
+     -webkit-box-orient: vertical;
+     -webkit-line-clamp: 4;
+     overflow: hidden;
+
+ }
+
+ /* row and column decoration */
+ .row {
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0px -18px;
+     padding: 8px;
+ }
+
+ .row>.column {
+     padding: 6px;
+ }
+
+ .column {
+     display: flex;
+     width: 25%;
+ }
+
+ .row:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+
+ .grid2,
+ .grid3 {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 30px;
+ }
+
+ /* content decoration */
+ .content {
+     background-color: white;
+     padding: 10px;
+     border: 1px solid gray;
+ }
+
+ /* window size 850 width set */
+
+ @media (max-width: 850px) {
+     .aboutImg .aboutSection {
+         width: 50%;
+     }
+
+     @media (max-width: 400px) {
+         .aboutSection {
+             display: block;
+         }
+
+         .aboutSection .aboutImg {
+             display: none;
+         }
+     }
+
+ }
+
+ @media screen and (max-width: 850px) {
+     .column {
+         width: 50%;
+
+     }
+ }
+
+ /* window size 400 width set */
+ @media screen and (max-width: 400px) {
+     .column {
+         width: 100%;
+         flex-flow: column wrap;
+     }
+ }
